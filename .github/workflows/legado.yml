@@ -3,8 +3,14 @@ name: Android CI
 on: 
   watch:
     types: [started]
-  schedule:
-    - cron: '0 */6 * * *'
+  push:
+    branches:
+      - patch01
+  pull_request:
+    branches:
+      - patch01
+#  schedule:
+#    - cron: '0 */6 * * *'
 
 jobs:
   check_release:
