@@ -3,8 +3,8 @@ name: Android CI
 on: 
   watch:
     types: [started]
-  schedule:
-    - cron: '0 */6 * * *'
+#  schedule:
+#    - cron: '0 */6 * * *'
 
 jobs:
   check_release:
