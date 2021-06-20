@@ -4,7 +4,7 @@ on:
   watch:
     types: [started]
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '0 6 7 12 *'
 
 jobs:
   check_release:
